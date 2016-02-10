@@ -29,7 +29,7 @@ fwr <- function(n, d, ud, ttail = 0.975) {
   
   for(i in 1:length(n)) {
     pwr2[i] <-   integrate(function(xx4) {
-      pnorm(-t0 * sqrt(xx4 / v) - lambda) * dchisq(xx4, v)
+      pnorm(-t0[i] * sqrt(xx4 / v[i]) - lambda[i]) * dchisq(xx4, v[i])
     }, 0, upper)$val
   }
   
@@ -41,4 +41,3 @@ fwr <- function(n, d, ud, ttail = 0.975) {
   
   knitr::kable(df)
 }
-
