@@ -30,3 +30,4 @@ fwr <- function(n, d, ud, ttail = 0.975) {
   cat("n", " \t", "power", " \t", "omega", " \n")
   cat(n, " \t", power, " \t", omega, " \n")
 }
+
