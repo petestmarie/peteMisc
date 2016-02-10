@@ -4,7 +4,7 @@
 \alias{fwr}
 \title{\code{fwr} power and omega from Lui(2012)}
 \usage{
-fwr(n, d, ud)
+fwr(n, d, ud, ttail = 0.975)
 }
 \arguments{
 \item{n}{Sample Size.}
@@ -12,6 +12,8 @@ fwr(n, d, ud)
 \item{d}{Delta/Sigma.}
 
 \item{ud}{U/Sigma.}
+
+\item{ttail}{2-sided upper tail (defaults to 0.975)}
 }
 \value{
 Power and Omega.
@@ -20,6 +22,6 @@ Power and Omega.
 \code{fwr} power and omega from Lui(2012)
 }
 \examples{
-fwr(n = 70, d = 0.5, ud = 0.35)
+fwr(n = 70, d = 0.5, ud = 0.35, ttail = 0.975)
 }
 
