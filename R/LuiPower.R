@@ -8,9 +8,10 @@
 #' @param ud U/Sigma.
 #' @param ttail 2-sided upper tail (defaults to 0.975)
 #' @return Power and Omega.
+#' @export
 #' @examples
 #' fwr(n = 70, d = 0.5, ud = 0.35, ttail = 0.975)
-#' @export
+
 fwr <- function(n, d, ud, ttail = 0.975) {
   v      <- 2 * n - 2
   lambda <- sqrt(n / 2) * d
