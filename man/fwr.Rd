@@ -7,7 +7,7 @@
 fwr(n, d, ud, ttail = 0.975)
 }
 \arguments{
-\item{n}{Sample Size.}
+\item{n}{Sample Size (can be a range).}
 
 \item{d}{Delta/Sigma.}
 
@@ -23,5 +23,7 @@ Power and Omega.
 }
 \examples{
 fwr(n = 70, d = 0.5, ud = 0.35, ttail = 0.975)
+fwr(n = seq(65, 75, by=1), d = 0.5, ud = 0.35, ttail = 0.975)
+
 }
 
